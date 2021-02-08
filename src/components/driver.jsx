@@ -47,7 +47,7 @@ const driverImages = [
 
 class SliderButton extends Component {
   render() {
-    if (this.props.text != "") {
+    if (this.props.text !== "") {
       return (
         <a href={this.props.href} className="button">{this.props.text}</a>
       )
@@ -63,9 +63,7 @@ const slides = driverImages.map((element, index) =>
       <div className="driver-text">
         <h1>{element.heading}</h1>
         <p>{element.text}</p>
-
         <SliderButton href={element.link} text={element.button}></SliderButton>
-
       </div>
     </div>
     <img src={element.src} alt={element.alt}></img>
@@ -80,31 +78,4 @@ export class Driver extends Component {
       </section>
     )
   }
-}
-
-// export class Driver extends Component {
-//   render() {
-//     return (
-//       <section className='driver'>
-//         <div className="swiper-container swiper-driver">
-//           <div className="swiper-wrapper">
-
-//             <div className="swiper-slide driver-image">
-//               <div class="container">
-//                 <div class="driver-text" data-aos="fade-right">
-//                   <h1>RC Medical</h1>
-//                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-//                   dolore
-//                   magna
-//                 aliqua.</p>
-//                 </div>
-//               </div>
-//               <img src={driverSlide} alt="" />
-//             </div>
-
-//           </div>
-//         </div>
-//       </section>
-//     )
-//   }
-// }
+};
