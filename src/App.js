@@ -1,21 +1,27 @@
 import './assets/css/style.css';
 
 import { Header } from './components/header';
-import { Driver } from './components/driver';
-import { Counter } from './components/counter';
-import { About } from "./components/about";
-import { IconBoxes } from "./components/icon-boxes";
-import { Newsletter } from "./components/newsletter";
+import Home from "./routes/Home";
+import Trusted from "./routes/Trusted";
+import Liaison from "./routes/Liaison";
+import { Footer } from "./components/footer";
+
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-      <Driver />
-      <Counter />
-      <About />
-      <IconBoxes />
-      <Newsletter />
+    <div>
+
+      <Router>
+        <Header />
+        <Switch>
+          <Route path="/" exact component={Home} />
+          <Route path="/zaufali-nam" component={Trusted} />
+          <Route path="/współpraca" exact component={Liaison} />
+        </Switch>
+        <Footer />
+      </Router>
     </div>
   );
 }

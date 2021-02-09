@@ -1,36 +1,13 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-
-let menu = [
-  {
-    name: "Produkty",
-    link: "",
-  },
-  {
-    name: "Zaufali nam",
-    link: "",
-  },
-  {
-    name: "Współpraca",
-    link: "",
-  },
-  {
-    name: "Do pobrania",
-    link: "",
-  },
-  {
-    name: "Kontakt",
-    link: "",
-  },
-
-];
+import { Link } from 'react-router-dom';
+import { menu } from "./cms-data/menu-data";
 
 export class Header extends Component {
   render() {
     return (
       <header>
         <div className="container">
-          <Router><Link to="" className='logo'></Link></Router>
+          <Link to="/" className='logo'></Link>
           <Menu />
           <Burger />
         </div>
@@ -41,25 +18,17 @@ export class Header extends Component {
 
 
 class Menu extends Component {
-  state = { isOpen: false };
 
-  handleToggle = () => {
-    this.setState({ isOpen: !this.state.isOpen });
-  }
   render() {
-    const isOpen = this.state.isOpen;
-
     return (
-      <Router>
-        <ul id='menu' className={isOpen ? 'menu mobile-open' : 'menu'}>
-          {menuLinks}
-        </ul>
-      </Router>
+      <ul id='menu' className="menu">
+        {menuLinks}
+      </ul>
     )
   }
 }
 
-class MenuLink extends Component {
+export class MenuLink extends Component {
   render() {
     return (
       <Link to={this.props.link}><li>{this.props.name}</li></Link>
@@ -92,3 +61,4 @@ class Burger extends Component {
   }
 };
 
+export { menuLinks };
