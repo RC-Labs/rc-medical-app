@@ -9,6 +9,7 @@ export class Header extends Component {
         <div className="container">
           <Link to="/" className='logo'></Link>
           <Menu />
+          <MobileMenu />
           <Burger />
         </div>
       </header>
@@ -22,6 +23,23 @@ class Menu extends Component {
   render() {
     return (
       <ul id='menu' className="menu">
+        {menuLinks}
+      </ul>
+    )
+  }
+}
+
+class MobileMenu extends Component {
+  state = { isOpen: true };
+
+  handleToggle = () => {
+    this.setState({ isOpen: !this.state.isOpen });
+  }
+  render() {
+    const isOpen = this.state.isOpen;
+
+    return (
+      <ul id='menu' onClick={this.handleToggle} className={isOpen ? 'menu mobile-open' : 'menu'}>
         {menuLinks}
       </ul>
     )

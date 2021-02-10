@@ -1,6 +1,6 @@
 
 import { Counter } from '../components/counter';
-import { About } from "../components/about";
+import { References } from "../components/references";
 import { Newsletter } from "../components/newsletter";
 import { Partners } from "../components/partners";
 
@@ -8,7 +8,7 @@ function Trusted() {
   return (
     <>
       <Counter />
-      <About />
+      <References />
       <Partners />
       <Newsletter />
     </>

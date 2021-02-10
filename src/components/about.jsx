@@ -7,7 +7,7 @@ export class About extends Component {
       <section className='about'>
         <div className="container">
           <div className="left">
-            <h2>{aboutData.heading}</h2>
+            <h2 data-aos='fade-right'>{aboutData.heading}</h2>
           </div>
           <div className="right">
             <p>{aboutData.paragraph}</p>

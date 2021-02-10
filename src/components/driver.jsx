@@ -33,7 +33,7 @@ const driverImages = [
     heading: "Zadowoleni klienci",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     button: 'referencje',
-    link: "",
+    link: "/zaufali-nam",
   },
   {
     src: driverSlide4,
@@ -41,7 +41,7 @@ const driverImages = [
     heading: "Szeroki asortyment",
     text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     button: "zobacz",
-    link: "",
+    link: "/produkty",
   },
 ];
 
