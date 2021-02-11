@@ -31,6 +31,22 @@ const references = [
     quote: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, adipisci molestiae.",
     author: "Elon Musk",
     company: "SpaceX",
+  }, {
+    quote: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, adipisci molestiae.",
+    author: "Elon Musk",
+    company: "SpaceX",
+  }, {
+    quote: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, adipisci molestiae.",
+    author: "Elon Musk",
+    company: "SpaceX",
+  }, {
+    quote: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, adipisci molestiae.",
+    author: "Elon Musk",
+    company: "SpaceX",
+  }, {
+    quote: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, adipisci molestiae.",
+    author: "Elon Musk",
+    company: "SpaceX",
   },
 ];
 

@@ -24,13 +24,15 @@ const quotes = references.map((element, index) =>
 );
 
 class Testimonials extends Component {
-
+  state = {
+    isOpen: false,
+  }
   render() {
     return (
-      <div className='testimonials'>
-        <span className="button small-button more">pokaż więcej</span>
-        {quotes}
-      </div>
+      <div className={this.state.isOpen ? 'testimonials testimonials-open' : 'testimonials'}>
+        <span onClick={() => this.setState({ isOpen: true })} className={this.state.isOpen ? 'button small-button more invisible' : 'button small-button more'}>pokaż więcej</span>
+        { quotes}
+      </div >
     )
   }
 }

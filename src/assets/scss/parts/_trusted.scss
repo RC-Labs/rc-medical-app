@@ -24,6 +24,14 @@
     height: 300px;
     transition: height 0.3s;
 
+    &.testimonials-open {
+      height: 100%;
+
+      &:after {
+        display: none;
+      }
+    }
+
     &:after {
       content: "";
       position: absolute;
@@ -32,10 +40,6 @@
       bottom: 0;
       left: 0;
       background: linear-gradient(transparent, white);
-    }
-
-    &.expand:after {
-      display: none;
     }
 
     .more {
@@ -48,6 +52,10 @@
 
       &:hover {
         bottom: 5px;
+      }
+
+      &.invisible {
+        display: none;
       }
     }
 

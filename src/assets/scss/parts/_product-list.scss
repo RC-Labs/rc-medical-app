@@ -4,61 +4,125 @@
   }
 
   .categories {
-    background: tomato;
     width: 280px;
-    padding: 20px;
+    // height: 100%;
+    position: relative;
 
     @media (max-width: 1024px) {
       width: 0;
       padding: 0;
+      display: none;
+    }
+
+    .cat-sticky {
+      padding: 20px 20px 20px 0;
+      position: sticky;
+      top: 20px;
+      height: fit-content;
+    }
+
+    .cat-heading {
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      width: 100%;
+
+      border-bottom: 1px solid $primary;
+    }
+
+    .cat {
+      display: block;
+      margin-bottom: 20px;
+      color: tomato;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 
   .product-list {
-    // background: teal;
-    width: calc(100% - 280px);
-    // padding: 20px;
+    width: calc(100% - 280px - 10px);
+    margin-left: 10px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
+    justify-content: right;
 
     @media (max-width: 1024px) {
       width: 100%;
+      margin-left: 0;
     }
   }
 
   .listed-product {
     background: white;
-    width: calc(100% / 4);
+    width: calc(100% / 4 - 10px);
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
-    border: 1px solid gainsboro;
+    margin-left: 10px;
+    border: 1px solid $light-gray;
+    color: $med-gray;
+    position: relative;
+    top: 0;
+    transition: box-shadow 0.2s, top 0.2s;
+
+    &:hover {
+      box-shadow: 0 5px 5px -3px #00000030;
+      top: -4px;
+    }
+
+    @media (max-width: 1200px) {
+      width: calc(100% / 3 - 10px);
+    }
+
+    @media (max-width: 1024px) {
+      width: calc(100% / 4 - 10px);
+    }
+
+    @media (max-width: 768px) {
+      width: calc(100% / 3 - 10px);
+    }
+
+    @media (max-width: 580px) {
+      width: calc(100% / 2 - 10px);
+    }
+
+    @media (max-width: 375px) {
+      width: 100%;
+      margin-left: 0;
+    }
 
     .image {
-      background: gainsboro;
+      background: $light-gray;
       display: block;
       width: 100%;
       height: 200px;
-      margin-bottom: 10px;
     }
 
     .product-info {
       display: flex;
       flex-direction: column;
       padding: 20px;
+
+      @media (max-width: 768px) {
+        padding: 10px;
+      }
     }
 
     .product-name {
       font-size: 16px;
       margin-bottom: 10px;
+      font-weight: 400;
     }
 
     .product-detail {
-      font-size: 14px;
+      font-size: 12px;
       margin-bottom: 10px;
+      text-transform: uppercase;
+      color: $light-gray;
+      font-weight: 800;
     }
   }
 }

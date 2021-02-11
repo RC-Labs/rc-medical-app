@@ -8,9 +8,10 @@ export class Header extends Component {
       <header>
         <div className="container">
           <Link to="/" className='logo'></Link>
-          <Menu />
-          <MobileMenu />
-          <Burger />
+          <nav>
+            <Menu />
+            <MobileMenu />
+          </nav>
         </div>
       </header>
     )
@@ -19,7 +20,6 @@ export class Header extends Component {
 
 
 class Menu extends Component {
-
   render() {
     return (
       <ul id='menu' className="menu">
@@ -30,21 +30,28 @@ class Menu extends Component {
 }
 
 class MobileMenu extends Component {
-  state = { isOpen: true };
-
-  handleToggle = () => {
-    this.setState({ isOpen: !this.state.isOpen });
+  state = {
+    isOpen: false,
   }
-  render() {
-    const isOpen = this.state.isOpen;
 
+  render() {
     return (
-      <ul id='menu' onClick={this.handleToggle} className={isOpen ? 'menu mobile-open' : 'menu'}>
-        {menuLinks}
-      </ul>
+      <>
+        <ul onClick={() => this.setState({ isOpen: false })} className={this.state.isOpen ? 'mobile-menu menu-open' : 'mobile-menu'}>
+          {menuLinks}
+        </ul>
+        <button onClick={() => this.setState({ isOpen: !this.state.isOpen })} className={this.state.isOpen ? 'burger open' : 'burger'}>
+          <div className="bars">
+            <div className="bar"></div>
+            <div className="bar"></div>
+            <div className="bar"></div>
+          </div>
+        </ button>
+      </>
     )
   }
 }
+
 
 export class MenuLink extends Component {
   render() {
@@ -58,25 +65,5 @@ const menuLinks = menu.map((element, index) =>
   <MenuLink key={index} link={element.link} name={element.name} />
 );
 
-class Burger extends Component {
-
-  state = { isOpen: false };
-
-  handleToggle = () => {
-    this.setState({ isOpen: !this.state.isOpen });
-  }
-  render() {
-    const isOpen = this.state.isOpen;
-    return (
-      <button onClick={this.handleToggle} className={isOpen ? 'burger open' : 'burger'}>
-        <div className="bars">
-          <div className="bar"></div>
-          <div className="bar"></div>
-          <div className="bar"></div>
-        </div>
-      </ button>
-    )
-  }
-};
 
 export { menuLinks };
