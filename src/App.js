@@ -18,6 +18,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 AOS.init();
 
+console.log(window.location.pathname)
+
 function App() {
 
   return (
