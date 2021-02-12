@@ -23,7 +23,7 @@ export class Newsletter extends Component {
         <div className="container">
           <div className="text">
             <h2>Zapisz się do newslettera</h2>
-            <span>Bądź na bieżąco lorem ipsum dolor sit amet</span>
+            <span>Bądź na bieżąco z naszymi ofertami.</span>
           </div>
           <NewsletterForm />
         </div>

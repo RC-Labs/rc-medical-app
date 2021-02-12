@@ -3,7 +3,7 @@ import { Input } from "./input";
 
 const liaisonText = {
   heading: 'Skontaktuj się z naszym działem handlowym',
-  text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque maiores dicta tenetur delectus quaerat! Autem laboriosam, temporibus, ad officiis asperiores dolores sint voluptatum iusto perferendis nihil expedita vel ea corrupti! Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, error sunt. Aliquam possimus, consequatur dolore deserunt et sint culpa laudantium inventore, corrupti cupiditate natus labore nisi, quam eius. Impedit, natus.',
+  text: 'Zapraszamy do współpracy klientów indywidualnych oraz klientów biznesowych. Realizujemy zamówienia hurtowe oraz detaliczne. Oferujemy możliwość współpracy partnerskiej w Polsce i za granicą.',
 };
 
 

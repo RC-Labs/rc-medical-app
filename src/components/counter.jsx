@@ -3,20 +3,20 @@ import CountUp from 'react-countup';
 
 let counterData = [
   {
-    number: 365,
+    number: 506,
     text: 'Zadowolonych klientów'
   }, {
-    number: 82,
-    text: 'Zadowolonych klientów'
+    number: 30,
+    text: 'obsługiwanych szpitali w Polsce'
   }, {
-    number: 24,
-    text: 'Zadowolonych klientów'
+    number: 15,
+    text: 'zrealizowanych zamówień publicznych'
   }, {
-    number: 36,
-    text: 'Zadowolonych klientów'
+    number: 8,
+    text: 'obsługiwanych krajów'
   }, {
-    number: 489,
-    text: 'Zadowolonych klientów'
+    number: 15000000,
+    text: 'sprzedanych rękawiczek'
   }
 ];
 

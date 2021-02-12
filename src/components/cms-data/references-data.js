@@ -1,6 +1,6 @@
 const referencesIntro = {
   heading: 'zaufali nam',
-  text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio atque quo ab, tempore, numquam a sunt dolore cumque eos debitis, blanditiis doloribus optio dolorem quia culpa qui sapiente. Corrupti, at! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, quis! Aliquid error iusto sapiente molestiae. Illo reiciendis dolores ipsam repellat quidem. Eaque ducimus eveniet minus nobis eum a, atque officiis.',
+  text: 'Wszelkie starania włożone w profesjonalną obsługę i indywidualne podejście do klientów, a także szybkość w działaniu pozwoliły nam zbudować sieć współpracy z wieloma jednostkami medycznymi zarówno w Polsce jak i za granicą. Nasi klienci to przede wszystkim placówki medyczne- szpitale publiczne, wojewódzkie, liczne kliniki, szpitale prywatne, przychodnie medyczne.placówki opieki i DPS, centra fizjoterapii, kliniki medycyny estetycznej. Współpracujemy także z jednostkami państwowymi - Policja.Poczta Polska, Bank PKO oraz z wieloma hurtowniami medycznymi. Należymy do Polsko - Słowackiej izby handlowo przemysłowej. Nasze produkty zakupili klienci w Danii, Belgii, Hiszpanii, Anglii, Słowenii, Czechach i Francji. ',
   button: 'współpraca',
   link: '/współpraca',
 };

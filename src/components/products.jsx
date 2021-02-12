@@ -54,7 +54,7 @@ class ProductsList extends Component {
   render() {
     return (
       <div className="product-list">
-        <h2>Produkty</h2>
+        <h2>Nasze produkty</h2>
         {Products}
       </div>
     )

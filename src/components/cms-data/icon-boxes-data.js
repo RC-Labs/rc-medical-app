@@ -4,22 +4,22 @@ const iconBoxesData = [
   {
     icon: iconPlaceholder,
     imageAlt: "placeholder",
-    title: "Lorem ipsum",
+    title: "idealnie dopasowane produkty",
     lead: "consectetur adipiscing elit, sed do eiusmod",
   }, {
     icon: iconPlaceholder,
     imageAlt: "placeholder",
-    title: "Lorem ipsum",
+    title: "szybka realizacja zamówień",
     lead: "consectetur adipiscing elit, sed do eiusmod",
   }, {
     icon: iconPlaceholder,
     imageAlt: "placeholder",
-    title: "Lorem ipsum",
+    title: "współpraca międzynarodowa",
     lead: "consectetur adipiscing elit, sed do eiusmod",
   }, {
     icon: iconPlaceholder,
     imageAlt: "placeholder",
-    title: "Lorem ipsum",
+    title: "nowoczesny magazyn i centrum logistyczne",
     lead: "consectetur adipiscing elit, sed do eiusmod",
   },
 ];
