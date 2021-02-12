@@ -24,11 +24,6 @@ const contacts = [
     position: "dział ksiegowości",
     phone: "+48 739 286 872",
     mail: "ksiegowosc@rcmedical.pl",
-  }, {
-    name: "Kacper Warykiewicz",
-    position: "obsługa klienta zagranicznego",
-    phone: "+48 662 230 388",
-    mail: "kacper@rcmedical.pl",
   },
 ]
 

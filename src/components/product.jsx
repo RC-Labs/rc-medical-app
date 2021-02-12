@@ -31,7 +31,22 @@ class ProductInfo extends Component {
         <h2>{currentProduct.name}</h2>
         <span className="category">{currentProduct.category}</span>
         <p>{currentProduct.desc}</p>
-        <span className="features">{currentProduct.features}</span>
+
+        <Vendors />
+      </div>
+    )
+  }
+}
+
+class Vendors extends Component {
+  render() {
+    return (
+      <div className="vendors">
+        <h3>Producenci</h3>
+
+        { (currentProduct.vendors).map((element, index) => {
+          return <span key={`vendor-${index}`}>{element}</span>
+        })}
       </div>
     )
   }
