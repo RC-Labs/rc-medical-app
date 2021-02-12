@@ -5,7 +5,27 @@ import Product4 from "../../assets/images/products/product-4.jpg"
 import Product5 from "../../assets/images/products/product-5.jpg"
 import Product6 from "../../assets/images/products/product-6.png"
 
-const categories = ['Rękawice ochronne', 'Strzykawki', 'Odzież ochronna', 'Maski ochronne', 'Dezynfekcja']
+const categories = [
+  {
+    name: 'Wszystkie produkty',
+    pageID: '/produkty/',
+  }, {
+    name: 'Rękawice ochronne',
+    pageID: '/produkty/cat1',
+  }, {
+    name: 'Strzykawki',
+    pageID: '/produkty/cat2',
+  }, {
+    name: 'Odzież ochronna',
+    pageID: '/produkty/cat3',
+  }, {
+    name: 'Maski ochronne',
+    pageID: '/produkty/cat4',
+  }, {
+    name: 'Dezynfekcja',
+    pageID: '/produkty/cat5',
+  }
+]
 const products = [
   {
     image: Product1,

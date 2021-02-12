@@ -22,6 +22,14 @@ export class ProductPage extends Component {
   }
 }
 
+class BackButton extends Component {
+  render() {
+    return (
+      <a href="/produkty" className="button small-button back">powrót</a>
+    )
+  }
+}
+
 class ProductInfo extends Component {
 
   render() {
@@ -33,6 +41,7 @@ class ProductInfo extends Component {
         <p>{currentProduct.desc}</p>
 
         <Vendors />
+        <BackButton />
       </div>
     )
   }
@@ -42,7 +51,7 @@ class Vendors extends Component {
   render() {
     return (
       <div className="vendors">
-        <h3>Producenci</h3>
+        <h3>Producenci:</h3>
 
         { (currentProduct.vendors).map((element, index) => {
           return <span key={`vendor-${index}`}>{element}</span>
