@@ -2,7 +2,6 @@ import './assets/css/style.css';
 import 'mapbox-gl/dist/mapbox-gl.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { products } from './components/cms-data/products-data';
 
 
 import { Header } from './components/header';
@@ -17,11 +16,6 @@ import { Footer } from "./components/footer";
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-const productIndex = products.map((element) =>
-  element.pageID
-)
-console.log(productIndex)
-console.log(window.location.pathname)
 AOS.init();
 
 function App() {
@@ -34,8 +28,7 @@ function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/produkty" exact component={Products} />
-
-          <Route path="" component={Product} />
+          <Route path="/produkty" component={Product} />
           <Route path="/zaufali-nam" component={Trusted} />
           <Route path="/współpraca" exact component={Liaison} />
           <Route path="/kontakt" exact component={Contact} />

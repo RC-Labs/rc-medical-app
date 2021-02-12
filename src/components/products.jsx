@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import { Link } from "react-router-dom";
 import { products, categories } from './cms-data/products-data';
-import Product from "../routes/Product";
+// import Product from "../routes/Product";
 
 
 
@@ -32,19 +32,20 @@ class Categories extends Component {
 }
 
 const categoryList = categories.map((element, index) =>
-  <Link to='/produkt' key={`cat-${index}`} className="cat">{element}</Link>
+  <Link to='/produkty' key={`cat-${index}`} className="cat">{element}</Link>
 )
 
 class ListedProduct extends Component {
   render() {
     return (
-      <Link to={this.props.link} className="listed-product">
-        <div className="image">{this.props.image}</div>
+      <a href={this.props.link} className="listed-product">
+        <div className="image">
+          <img src={this.props.src} alt={this.props.alt} /></div>
         <div className="product-info">
           <span className="product-name">{this.props.name}</span>
           <span className="product-detail">{this.props.detail}</span>
         </div>
-      </Link>
+      </a>
     )
   }
 }
@@ -60,7 +61,6 @@ class ProductsList extends Component {
 }
 
 const Products = products.map((element, index) =>
-  <ListedProduct link={`produkt-${element.pageID}`} key={`product-${index}`} name={element.name} detail={element.category} />
+  <ListedProduct link={element.pageID} key={`product-${index}`} name={element.name} detail={element.category} src={element.image} alt={element.alt} />
 )
 
-// link = {`produkt-${element.pageID}`}

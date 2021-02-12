@@ -1590,6 +1590,61 @@ footer .copyright .container span {
   background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iNTEycHgiIGlkPSJMYXllcl8xIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMnB4IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiBmaWxsPSIjNzA3Qjk4Ij48Zz48cGF0aCBkPSJNNDUzLjgsNDA3LjFjLTIzLjksMjUuMy01Mi4zLDQzLjgtODUuMiw1NS40QzMzNS43LDQ3NC4yLDMwMSw0ODAsMjY0LjUsNDgwYy0zNC45LDAtNjYuNy01LjUtOTUuMy0xNi42ICAgYy0yOC42LTExLTUzLjEtMjYuNC03My4zLTQ2LjFjLTIwLjMtMTkuNy0zNi00My4zLTQ3LjItNzAuOGMtMTEuMi0yNy41LTE2LjctNTcuNS0xNi43LTkwYzAtMzIuMSw2LjEtNjEuOCwxOC4zLTg5LjEgICBjMTIuMi0yNy4zLDI4LjgtNTEsNDkuOS03MS4xYzIxLjEtMjAuMSw0NS43LTM1LjgsNzQtNDcuM0MyMDIuMywzNy43LDIzMi41LDMyLDI2NC41LDMyYzI3LjYsMCw1NC40LDQsODAuMywxMiAgIGMyNiw4LDQ5LDIwLjEsNjkuMSwzNi4xYzIwLjEsMTYuMSwzNi4xLDM2LjEsNDguMSw2MC4yYzEyLDI0LjEsMTgsNTIuNCwxOCw4NC45YzAsMjQuMS0zLjMsNDUuNC0xMCw2My44ICAgYy02LjcsMTguNS0xNS42LDMzLjktMjYuOCw0Ni40Yy0xMS4yLDEyLjUtMjMuOSwyMS44LTM4LjMsMjhjLTE0LjQsNi4yLTI5LjUsOS4zLTQ1LjMsOS4zYy0xNi4yLDAtMjkuMi0zLjgtMzktMTEuNCAgIGMtOS43LTcuNi0xNC42LTE3LjMtMTQuNi0yOC45aC0zYy02LjEsOS42LTE1LjQsMTguOC0yOCwyNy40Yy0xMi42LDguNi0yOCwxMy00Ni4zLDEzYy0yNy42LDAtNDguOS05LTYzLjktMjcuMSAgIGMtMTUtMTguMS0yMi41LTQxLjUtMjIuNS03MC41YzAtMTYuOSwyLjgtMzMuNSw4LjUtNTBjNS43LTE2LjUsMTMuOC0zMS4xLDI0LjMtNDRjMTAuNS0xMi44LDIzLjEtMjMuMiwzNy43LTMxICAgYzE0LjYtNy44LDMwLjgtMTEuNyw0OC43LTExLjdjMTUuNCwwLDI4LjQsMy4yLDM5LDkuNmMxMC41LDYuNCwxNy40LDE0LjMsMjAuNywyMy41aDAuNmw0LjktMjQuMWg1NC4yTDM1NywyNjEuNCAgIGMtMC44LDUuNi0xLjksMTEuOC0zLjMsMTguN2MtMS40LDYuOC0yLjEsMTMuMi0yLjEsMTkuM2MwLDYuOCwxLjMsMTIuNSw0LDE3LjJjMi42LDQuNiw3LjgsNi45LDE1LjUsNi45ICAgYzE1LjgsMCwyOC45LTguNCwzOS4zLTI1LjNjMTAuMy0xNi45LDE1LjUtMzkuNSwxNS41LTY4YzAtMjQuMS00LjEtNDUuNS0xMi4yLTY0LjFjLTguMS0xOC43LTE5LjQtMzQuMy0zMy44LTQ3ICAgYy0xNC40LTEyLjYtMzEuNi0yMi4yLTUxLjQtMjguNmMtMTkuOS02LjQtNDEuNi05LjYtNjUuMS05LjZjLTI1LjYsMC00OSw0LjUtNzAuMywxMy41cy0zOS41LDIxLjUtNTQuNSwzNy4zICAgYy0xNSwxNS45LTI2LjcsMzQuNS0zNSw1NkM5NS4yLDIwOS4xLDkxLDIzMi4zLDkxLDI1Ny4yYzAsMjYuNSw0LjQsNTAuNCwxMy4xLDcxLjdjOC43LDIxLjMsMjEsMzkuNCwzNi44LDU0LjUgICBjMTUuOCwxNS4xLDM0LjcsMjYuNiw1Ni42LDM0LjZjMjEuOSw4LDQ2LjEsMTIsNzIuNCwxMmMzMi45LDAsNjEuMi01LjIsODQuOS0xNS43YzIzLjctMTAuNCw0NS41LTI0LjksNjUuNC00My40TDQ1My44LDQwNy4xeiAgICBNMjYzLjMsMTg4Yy05LjcsMC0xOC4zLDIuOC0yNS42LDguNGMtNy4zLDUuNi0xMy41LDEyLjctMTguNiwyMS40Yy01LjEsOC42LTguOSwxOC4yLTExLjYsMjguNmMtMi42LDEwLjQtNCwyMC41LTQsMzAuMSAgIGMwLDQuOCwwLjUsOS45LDEuNSwxNS40YzEsNS40LDMsMTAuNCw2LjEsMTUuMWMzLDQuNiw3LDguNCwxMS45LDExLjRjNC45LDMsMTEuNCw0LjUsMTkuNSw0LjVjMTEsMCwyMC4zLTIuNywyOC04LjEgICBjNy43LTUuNCwxNC0xMi4yLDE4LjktMjAuNWM0LjktOC4yLDguNC0xNy4yLDEwLjctMjYuOGMyLjItOS42LDMuMy0xOC41LDMuMy0yNi41YzAtNi40LTAuNi0xMi43LTEuOC0xOSAgIGMtMS4yLTYuMi0zLjMtMTEuOC02LjQtMTYuOWMtMy01LTcuMi05LjEtMTIuNS0xMi4zQzI3Ny41LDE4OS42LDI3MSwxODgsMjYzLjMsMTg4eiIvPjwvZz48L3N2Zz4=);
 }
 
+.product .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 580px) {
+  .product .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+}
+
+.product .product-image {
+  width: 50%;
+  padding-right: 40px;
+}
+
+@media (max-width: 580px) {
+  .product .product-image {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+.product .product-image img {
+  width: 100%;
+}
+
+.product .product-info {
+  width: 50%;
+}
+
+@media (max-width: 580px) {
+  .product .product-info {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+
+.product .category {
+  text-transform: uppercase;
+  color: #CED2E6;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.product p {
+  margin-bottom: 20px;
+}
+
 .products .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1725,6 +1780,13 @@ footer .copyright .container span {
   display: block;
   width: 100%;
   height: 200px;
+  overflow: hidden;
+}
+
+.products .listed-product .image img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .products .listed-product .product-info {

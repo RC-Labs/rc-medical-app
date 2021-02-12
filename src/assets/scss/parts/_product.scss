@@ -1,0 +1,44 @@
+.product {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+
+    @media (max-width: 580px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .product-image {
+    width: 50%;
+    padding-right: 40px;
+
+    @media (max-width: 580px) {
+      width: 100%;
+      padding-right: 0;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .product-info {
+    width: 50%;
+
+    @media (max-width: 580px) {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+  }
+
+  .category {
+    text-transform: uppercase;
+    color: $light-gray;
+    font-weight: 800;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 20px;
+  }
+}
