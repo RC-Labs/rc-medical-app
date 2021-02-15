@@ -1,17 +1,32 @@
+// import { getAllByTitle } from '@testing-library/react';
 import { Component } from 'react';
-import { Link } from "react-router-dom";
 import { products, categories } from './cms-data/products-data';
-// import Product from "../routes/Product";
+
 
 
 
 export class ProductsSection extends Component {
+  constructor(props) {
+    super(props);
+    this.handler = this.handler.bind(this)
+    this.state = {
+      cat: 'Wszystkie produkty'
+    };
+  }
+  handler() {
+    this.setState({
+      cat: '...'
+    })
+    console.log(this.state.cat)
+  }
+
   render() {
+
     return (
       <section className="products">
         <div className="container">
-          <Categories />
-          <ProductsList />
+          <Categories handler={this.handler} />
+          <ProductsList passCat={this.state.cat} />
         </div>
       </section>
     )
@@ -24,16 +39,32 @@ class Categories extends Component {
       <div className="categories">
         <div className="cat-sticky">
           <span className="cat-heading">Kategorie</span>
-          {categoryList}
+          {/* <span onClick={this.props.handler} className="button">button</span> */}
+          <CategoryList click={this.props.handler} />
         </div>
       </div>
     )
   }
 }
 
-const categoryList = categories.map((element, index) =>
-  <Link to='/produkty' key={`cat-${index}`} className="cat">{element.name}</Link>
-)
+class CategoryList extends Component {
+  // constructor(props) {
+  //   super(props);
+  //   this.state = {
+  //     cat: 'Wszystkie produkty'
+  //   };
+  // }
+  render() {
+    // console.log(this.state.cat)
+    return (
+      categories.map((element, index) =>
+        <span onClick={this.props.click} key={`cat-${index}`} className="cat">{element.name}</span>
+      )
+    )
+  }
+}
+
+// onClick = {() => this.setState({ cat: element.name })}
 
 
 class ListedProduct extends Component {
@@ -52,46 +83,46 @@ class ListedProduct extends Component {
 }
 
 
-
 class ProductsList extends Component {
+
   render() {
     return (
       <div className="product-list">
-        <h2>Nasze produkty</h2>
-        <Products />
+        <h2>{this.props.passCat}</h2>
+        {/* <Products /> */}
+        {Products}
       </div>
     )
   }
 }
 
+const Products = products.map((element, index) =>
+  <ListedProduct link={element.pageID} key={`product-${index}`} name={element.name} detail={element.category} src={element.image} alt={element.alt} />
+)
 
-// const Products = products.map((element, index) =>
-//   <ListedProduct link={element.pageID} key={`product-${index}`} name={element.name} detail={element.category} src={element.image} alt={element.alt} />
-// )
 
 
 
 
 // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-let cat = 'Maski ochronne'  //dowiedz się jak zrobić dynamiczną kategorię
 
-function Products() {
+// function Products() {
 
-  if (cat === "") {
-    return (
+//   if (cat === "") {
+//     return (
 
-      products.map((element, index) =>
-        <ListedProduct key={index} src={element.image} alt={element.alt} name={element.name} detail={element.category} />
-      )
-    )
-  } else if (cat === 'Maski ochronne') {
-    return (
-      <>
-        {products.filter(product => product.category === cat).map((filteredProduct, index) => (
-          <ListedProduct key={index} src={filteredProduct.image} alt={filteredProduct.alt} name={filteredProduct.name} detail={filteredProduct.category} />
-        ))}
-      </>
-    );
-  }
-}
+//       products.map((element, index) =>
+//         <ListedProduct link={element.pageID} key={index} src={element.image} alt={element.alt} name={element.name} detail={element.category} />
+//       )
+//     )
+//   } else if (cat === 'Maski ochronne') {
+//     return (
+//       <>
+//         {products.filter(product => product.category === cat).map((filteredProduct, index) => (
+//           <ListedProduct link={filteredProduct.pageID} key={index} src={filteredProduct.image} alt={filteredProduct.alt} name={filteredProduct.name} detail={filteredProduct.category} />
+//         ))}
+//       </>
+//     );
+//   }
+// }
