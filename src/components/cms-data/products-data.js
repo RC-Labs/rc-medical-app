@@ -36,7 +36,7 @@ const products = [
     desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
     features: ['EN 455', 'EN 374'],
     vendors: ['MUMU', 'MUMU Plus', 'Sempercare', 'Ansell', 'Comfort Gloves'],
-    pageID: "/produkty/produkt-001",
+    pageID: "/produkty/rekawice-nitrylowe",
 
   }, {
     image: Product2,
@@ -47,7 +47,7 @@ const products = [
     desc: "Lorem ipsum dolor sit amet.",
     features: ['EN 455', 'EN 374'],
     vendors: ['MUMU', 'MUMU Plus', 'Sempercare', 'Ansell', 'Comfort Gloves'],
-    pageID: "/produkty/produkt-002",
+    pageID: "/produkty/rekawice-lateksowe-pudrowane",
 
   }, {
     image: Product2,
@@ -58,7 +58,7 @@ const products = [
     desc: "Lorem ipsum dolor sit amet.",
     features: ['EN 455', 'EN 374'],
     vendors: ['MUMU', 'MUMU Plus', 'Sempercare', 'Ansell', 'Comfort Gloves'],
-    pageID: "/produkty/produkt-003",
+    pageID: "/produkty/rekawice-lateksowe-bezpudrowe",
 
   }, {
     image: Product3,
@@ -69,7 +69,7 @@ const products = [
     desc: "Lorem ipsum dolor sit amet.",
     features: ['93/42/EEC', 'CE 10422'],
     vendors: ['Cellotron'],
-    pageID: "/produkty/produkt-004",
+    pageID: "/produkty/strzykawki-trzyczesciowe",
 
   }, {
     image: Product4,
@@ -80,7 +80,7 @@ const products = [
     desc: "Lorem ipsum dolor sit amet.",
     features: ['CE'],
     vendors: ['Rue Cambon'],
-    pageID: "/produkty/produkt-005",
+    pageID: "/produkty/fartuchy",
 
   }, {
     image: Product5,
@@ -91,7 +91,7 @@ const products = [
     desc: "Lorem ipsum dolor sit amet.",
     features: ['EN 455', 'EN 374'],
     vendors: ['Aibana', 'Agrupacion Salud', 'Baltic', 'Filter Service', 'Zgoda'],
-    pageID: "/produkty/produkt-006",
+    pageID: "/produkty/maski-ffp2",
 
   }, {
     image: Product5,
@@ -102,29 +102,7 @@ const products = [
     desc: "Lorem ipsum dolor sit amet.",
     features: ['EN 455', 'EN 374'],
     vendors: ['Aibana', 'Agrupacion Salud', 'Baltic', 'Filter Service', 'Zgoda'],
-    pageID: "/produkty/produkt-007",
-
-  }, {
-    image: Product5,
-    alt: "",
-    name: "Maski FFP3 - produkcja krajowa",
-    category: "Maski ochronne",
-    type: "FFP3",
-    desc: "Lorem ipsum dolor sit amet.",
-    features: ['EN 455', 'EN 374'],
-    vendors: ['Aibana', 'Agrupacion Salud', 'Baltic', 'Filter Service', 'Zgoda'],
-    pageID: "/produkty/produkt-008",
-
-  }, {
-    image: Product5,
-    alt: "",
-    name: "Maski FFP2 - produkcja krajowa",
-    category: "Maski ochronne",
-    type: "FFP3",
-    desc: "Lorem ipsum dolor sit amet.",
-    features: ['EN 455', 'EN 374'],
-    vendors: ['Aibana', 'Agrupacion Salud', 'Baltic', 'Filter Service', 'Zgoda'],
-    pageID: "/produkty/produkt-009",
+    pageID: "/produkty/maski-ffp3",
 
   }, {
     image: Product6,
@@ -135,7 +113,7 @@ const products = [
     desc: "Lorem ipsum dolor sit amet.",
     features: ['Nie zawiera alkoholu'],
     vendors: ['Silverflash'],
-    pageID: "/produkty/produkt-010",
+    pageID: "/produkty/aerozol-silverflash",
 
   },
 ];

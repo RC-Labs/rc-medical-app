@@ -25,23 +25,23 @@ const menu = [
 const products = [
   {
     name: "Rękawice",
-    link: "/",
+    link: "/produkty",
   },
   {
     name: "Maski",
-    link: "/",
+    link: "/produkty",
   },
   {
     name: "Odzież ochronna",
-    link: "/",
+    link: "/produkty",
   },
   {
     name: "Przyłbice",
-    link: "/",
+    link: "/produkty",
   },
   {
     name: "Gogle medyczne",
-    link: "/",
+    link: "/produkty",
   },
 ]
 

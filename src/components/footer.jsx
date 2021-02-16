@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { ContactBoxes } from "./contact-boxes";
-import { MenuLink, menuLinks } from "./header";
+import { menuLinks } from "./header";
 import { address } from "../components/cms-data/footer-data";
-import { products } from "./cms-data/menu-data";
+import { products } from "./cms-data/products-data";
 
 class Copyright extends Component {
   render() {
@@ -34,10 +34,15 @@ const addressInfo = address.map((element, index) =>
     <span className="address">{element.postal}</span>
   </div>
 )
+let excludeAfterIndex = 5;
 
-const extraLinks = products.map((element, index) =>
-  <MenuLink key={index} link={element.link} name={element.name} />
-);
+const extraLinks = products.reduce((mappedArray, item, index) => {
+  if (index < excludeAfterIndex) { // Whatever range condition you want
+    mappedArray.push(<a href={item.pageID} key={index}>{item.name}</a>);
+  }
+
+  return mappedArray;
+}, []);
 
 class FooterMenu extends Component {
 

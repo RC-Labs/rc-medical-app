@@ -13,7 +13,7 @@ import Liaison from "./routes/Liaison";
 import Contact from "./routes/Contact";
 import Products from "./routes/Products";
 import Product from "./routes/Product";
-import CMS from "./routes/CMS"
+import Downloads from "./routes/Downloads";
 import { Footer } from "./components/footer";
 
 import { BrowserRouter as Router, Switch, Route, useLocation, withRouter } from 'react-router-dom';
@@ -43,8 +43,8 @@ function App() {
             <Route path="/produkty" component={Product} />
             <Route path="/zaufali-nam" exact component={Trusted} />
             <Route path="/współpraca" exact component={Liaison} />
+            <Route path="/do-pobrania" exact component={Downloads} />
             <Route path="/kontakt" exact component={Contact} />
-            <Route path="/cms" exact component={CMS} />
           </Switch>
           <Footer />
         </ScrollToTop>

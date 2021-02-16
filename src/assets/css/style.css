@@ -894,6 +894,13 @@ footer .container .links-box {
   }
 }
 
+@media (max-width: 375px) {
+  footer .container .links-box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
 footer .container a {
   color: white;
   font-size: 14px;
@@ -1687,6 +1694,65 @@ footer .copyright .container span {
   display: none;
 }
 
+.downloads .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.downloads .container h2 {
+  width: 100%;
+}
+
+.downloads .download {
+  width: calc(100% / 4);
+  margin-right: 20px;
+  border: 1px solid gainsboro;
+}
+
+.downloads .download:last-child {
+  margin-right: 0;
+}
+
+@media (max-width: 1024px) {
+  .downloads .download {
+    width: 280px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .downloads .download {
+    margin-right: 0;
+  }
+}
+
+.downloads .download .image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  border-bottom: 1px solid gainsboro;
+}
+
+.downloads .download .image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.downloads .download .dl-info {
+  padding: 20px;
+}
+
+.downloads .download .title {
+  display: block;
+  margin-bottom: 20px;
+}
+
 .products .container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1773,6 +1839,7 @@ footer .copyright .container span {
   transition: left 0.2s;
   font-weight: 400;
   white-space: nowrap;
+  cursor: pointer;
 }
 
 .products .categories .cat:before {
@@ -1922,6 +1989,7 @@ footer .copyright .container span {
 
 .products .listed-product .image img {
   height: 100%;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }

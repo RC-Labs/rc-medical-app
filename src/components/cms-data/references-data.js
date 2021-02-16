@@ -8,46 +8,21 @@ const referencesIntro = {
 
 const references = [
   {
-    quote: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, adipisci molestiae.",
-    author: "Elon Musk",
-    company: "SpaceX",
+    quote: "Zamówienia wykonane z należytą starannością.",
+    company: "Poczta Polska",
   }, {
-    quote: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, adipisci molestiae.",
-    author: "Elon Musk",
-    company: "SpaceX",
+    quote: "Profesjonalny oraz godny zaufania Partner.",
+    company: "Szpital Pediatryczny w Bielsku- Białej",
   }, {
-    quote: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, adipisci molestiae.",
-    author: "Elon Musk",
-    company: "SpaceX",
+    quote: "Polecamy jako rzetelnego dostawcę.",
+    company: "Mysłowickie Centrum Zdrowia ",
   }, {
-    quote: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, adipisci molestiae.",
-    author: "Elon Musk",
-    company: "SpaceX",
+    quote: "Wiarygodny, kompetentny rzetelny i godny zaufania partner biznesowy.",
+    company: "Centrum Terapii Nerwic w Mosznej",
   }, {
-    quote: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, adipisci molestiae.",
-    author: "Elon Musk",
-    company: "SpaceX",
-  }, {
-    quote: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, adipisci molestiae.",
-    author: "Elon Musk",
-    company: "SpaceX",
-  }, {
-    quote: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, adipisci molestiae.",
-    author: "Elon Musk",
-    company: "SpaceX",
-  }, {
-    quote: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, adipisci molestiae.",
-    author: "Elon Musk",
-    company: "SpaceX",
-  }, {
-    quote: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, adipisci molestiae.",
-    author: "Elon Musk",
-    company: "SpaceX",
-  }, {
-    quote: "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo, adipisci molestiae.",
-    author: "Elon Musk",
-    company: "SpaceX",
-  },
+    quote: "Dostawy wykonane należycie i w ustalonym terminie.",
+    company: "Komenda Wojewódzka Policji w Krakowie",
+  }
 ];
 
 export { references, referencesIntro };

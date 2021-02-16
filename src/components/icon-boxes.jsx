@@ -10,7 +10,6 @@ class IconBox extends Component {
           <img src={this.props.src} alt={this.props.alt} />
         </div>
         <h3>{this.props.title}</h3>
-        <span>{this.props.lead}</span>
       </div>
     )
   }

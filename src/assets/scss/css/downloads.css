@@ -1,0 +1,23 @@
+.downloads {
+  background: teal;
+}
+
+.downloads .dl-list {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
+.downloads .download {
+  background: tomato;
+  width: 100px;
+}
+
+.downloads .download .image {
+  width: 100%;
+}
+
+.downloads .download .image img {
+  width: 100%;
+}
+/*# sourceMappingURL=downloads.css.map */

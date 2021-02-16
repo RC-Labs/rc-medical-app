@@ -18,7 +18,6 @@ class CtaParagraph extends Component {
 const quotes = references.map((element, index) =>
   <div key={`quote-${index}`} className="quote">
     <p>{element.quote}</p>
-    <span className="author">{element.author}</span>
     <span className="company">{element.company}</span>
   </div>
 );

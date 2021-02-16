@@ -1,26 +1,26 @@
-import iconPlaceholder from "../../assets/images/icons/icon-placeholder.svg";
+
+import glovesIcon from "../../assets/images/icons/gloves.svg";
+import worldIcon from "../../assets/images/icons/world.svg";
+import deliveryIcon from "../../assets/images/icons/delivery.svg";
+import warehouseIcon from "../../assets/images/icons/warehouse.svg";
 
 const iconBoxesData = [
   {
-    icon: iconPlaceholder,
-    imageAlt: "placeholder",
+    icon: glovesIcon,
+    imageAlt: "gloves",
     title: "idealnie dopasowane produkty",
-    lead: "consectetur adipiscing elit, sed do eiusmod",
   }, {
-    icon: iconPlaceholder,
-    imageAlt: "placeholder",
+    icon: deliveryIcon,
+    imageAlt: "delivery",
     title: "szybka realizacja zamówień",
-    lead: "consectetur adipiscing elit, sed do eiusmod",
   }, {
-    icon: iconPlaceholder,
-    imageAlt: "placeholder",
-    title: "współpraca międzynarodowa",
-    lead: "consectetur adipiscing elit, sed do eiusmod",
+    icon: worldIcon,
+    imageAlt: "world",
+    title: "międzynarodowa współpraca",
   }, {
-    icon: iconPlaceholder,
-    imageAlt: "placeholder",
+    icon: warehouseIcon,
+    imageAlt: "warehouse",
     title: "nowoczesny magazyn i centrum logistyczne",
-    lead: "consectetur adipiscing elit, sed do eiusmod",
   },
 ];
 
