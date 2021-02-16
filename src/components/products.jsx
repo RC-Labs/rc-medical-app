@@ -1,4 +1,4 @@
-// import { getAllByTitle } from '@testing-library/react';
+
 import { Component } from 'react';
 import { products, categories } from './cms-data/products-data';
 
@@ -13,11 +13,13 @@ export class ProductsSection extends Component {
       cat: 'Wszystkie produkty'
     };
   }
-  handler() {
+  handler(event) {
     this.setState({
-      cat: '...'
+      cat: event.target.innerHTML
+    }, () => {
+      localStorage.setItem("currentCat", this.state);
     })
-    console.log(this.state.cat)
+
   }
 
   render() {
@@ -25,7 +27,7 @@ export class ProductsSection extends Component {
     return (
       <section className="products">
         <div className="container">
-          <Categories handler={this.handler} />
+          <Categories handler={this.handler} passCat={this.state.cat} />
           <ProductsList passCat={this.state.cat} />
         </div>
       </section>
@@ -39,7 +41,6 @@ class Categories extends Component {
       <div className="categories">
         <div className="cat-sticky">
           <span className="cat-heading">Kategorie</span>
-          {/* <span onClick={this.props.handler} className="button">button</span> */}
           <CategoryList click={this.props.handler} />
         </div>
       </div>
@@ -48,14 +49,8 @@ class Categories extends Component {
 }
 
 class CategoryList extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.state = {
-  //     cat: 'Wszystkie produkty'
-  //   };
-  // }
+
   render() {
-    // console.log(this.state.cat)
     return (
       categories.map((element, index) =>
         <span onClick={this.props.click} key={`cat-${index}`} className="cat">{element.name}</span>
@@ -63,9 +58,6 @@ class CategoryList extends Component {
     )
   }
 }
-
-// onClick = {() => this.setState({ cat: element.name })}
-
 
 class ListedProduct extends Component {
   render() {
@@ -82,47 +74,16 @@ class ListedProduct extends Component {
   }
 }
 
-
 class ProductsList extends Component {
 
   render() {
     return (
       <div className="product-list">
         <h2>{this.props.passCat}</h2>
-        {/* <Products /> */}
-        {Products}
+        {  products.filter(product => product.category === this.props.passCat || this.props.passCat === "Wszystkie produkty").map((filteredProduct, index) => (
+          <ListedProduct link={filteredProduct.pageID} key={index} src={filteredProduct.image} alt={filteredProduct.alt} name={filteredProduct.name} detail={filteredProduct.category} />
+        ))}
       </div>
     )
   }
 }
-
-const Products = products.map((element, index) =>
-  <ListedProduct link={element.pageID} key={`product-${index}`} name={element.name} detail={element.category} src={element.image} alt={element.alt} />
-)
-
-
-
-
-
-// !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-
-// function Products() {
-
-//   if (cat === "") {
-//     return (
-
-//       products.map((element, index) =>
-//         <ListedProduct link={element.pageID} key={index} src={element.image} alt={element.alt} name={element.name} detail={element.category} />
-//       )
-//     )
-//   } else if (cat === 'Maski ochronne') {
-//     return (
-//       <>
-//         {products.filter(product => product.category === cat).map((filteredProduct, index) => (
-//           <ListedProduct link={filteredProduct.pageID} key={index} src={filteredProduct.image} alt={filteredProduct.alt} name={filteredProduct.name} detail={filteredProduct.category} />
-//         ))}
-//       </>
-//     );
-//   }
-// }

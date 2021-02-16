@@ -15,8 +15,8 @@ let counterData = [
     number: 8,
     text: 'obsługiwanych krajów'
   }, {
-    number: 15000000,
-    text: 'sprzedanych rękawiczek'
+    number: 150,
+    text: 'milionów sprzedanych rękawiczek'
   }
 ];
 
