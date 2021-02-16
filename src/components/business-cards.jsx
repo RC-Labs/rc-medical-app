@@ -3,7 +3,7 @@ import { contacts } from './cms-data/contact-data';
 
 
 const persons = contacts.map((element, index) =>
-  <div className="person-box">
+  <div key={`person-${index}`} className="person-box">
     <span className="name">{element.name}</span>
     <span className="position">{element.position}</span>
     <a href={`tel:${element.phone}`} className="phone">{element.phone}</a>

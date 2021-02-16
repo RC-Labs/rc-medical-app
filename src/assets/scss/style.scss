@@ -24,6 +24,10 @@ body {
   color: $dark-gray;
 }
 
+#root {
+  overflow-x: hidden;
+}
+
 .container {
   width: 1400px;
   height: 100%;
