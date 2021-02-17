@@ -80,7 +80,7 @@ class ProductsList extends Component {
       <div className="product-list">
         <h2>{this.props.passCat}</h2>
         {  products.filter(product => product.category === this.props.passCat || this.props.passCat === "Wszystkie produkty").map((filteredProduct, index) => (
-          <ListedProduct link={filteredProduct.pageID} key={index} src={filteredProduct.image} alt={filteredProduct.alt} name={filteredProduct.name} detail={filteredProduct.category} />
+          <ListedProduct link={window.location.origin + filteredProduct.pageID} key={index} src={filteredProduct.image} alt={filteredProduct.alt} name={filteredProduct.name} detail={filteredProduct.category} />
         ))}
       </div>
     )

@@ -28,7 +28,7 @@ function _ScrollToTop(props) {
   return props.children
 }
 const ScrollToTop = withRouter(_ScrollToTop)
-
+console.log(window.location.origin + "/dupa")
 function App() {
   return (
     <div>
