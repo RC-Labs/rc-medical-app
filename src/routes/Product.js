@@ -5,20 +5,13 @@ import { ProductPage } from "../components/product";
 
 
 function Product() {
-  if (window.location.pathname === '/produkt-001') {
-    return (
+  return (
+    <>
       <ProductPage />
-    )
-  } else {
-
-    return (
-      <>
-        <ProductPage />
-        <Partners />
-        <Newsletter />
-      </>
-    )
-  }
+      <Partners />
+      <Newsletter />
+    </>
+  )
 }
 
 export default Product;
