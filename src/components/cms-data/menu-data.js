@@ -22,27 +22,5 @@ const menu = [
 
 ];
 
-const products = [
-  {
-    name: "Rękawice",
-    link: "/produkty",
-  },
-  {
-    name: "Maski",
-    link: "/produkty",
-  },
-  {
-    name: "Odzież ochronna",
-    link: "/produkty",
-  },
-  {
-    name: "Przyłbice",
-    link: "/produkty",
-  },
-  {
-    name: "Gogle medyczne",
-    link: "/produkty",
-  },
-]
 
-export { menu, products };
+export { menu };

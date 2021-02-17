@@ -18,7 +18,6 @@ export class Header extends Component {
   }
 }
 
-
 class Menu extends Component {
   render() {
     return (

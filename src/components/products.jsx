@@ -3,8 +3,6 @@ import { Component } from 'react';
 import { products, categories } from './cms-data/products-data';
 
 
-
-
 export class ProductsSection extends Component {
   constructor(props) {
     super(props);
@@ -60,6 +58,7 @@ class CategoryList extends Component {
 }
 
 class ListedProduct extends Component {
+
   render() {
     return (
       <a href={this.props.link} className="listed-product">

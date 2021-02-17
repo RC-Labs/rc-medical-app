@@ -3,6 +3,7 @@ import Product2 from "../../assets/images/products/product-2.jpg"
 import Product3 from "../../assets/images/products/product-3.jpg"
 import Product4 from "../../assets/images/products/product-4.jpg"
 import Product5 from "../../assets/images/products/product-5.jpg"
+import Product51 from "../../assets/images/products/product-5-1.jpg"
 import Product6 from "../../assets/images/products/product-6.png"
 
 const categories = [
@@ -33,8 +34,8 @@ const products = [
     name: "Rękawice nitrylowe",
     category: "Rękawice ochronne",
     type: "nitrylowe",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. ",
-    features: ['EN 455', 'EN 374'],
+    desc: "Oferowane rękawice nitrylowe są zgodne z normami: EN 455-1, - 2, -3, -4 (Dyrektywa 93 / 42 / EEC dla wyrobów medycznych) EN 420, EN 374 - 1, -2, -3 (Dyrektywa 89 / 686 / EEC o środkach ochrony osobistej)",
+    features: ['produkt jednorazowego użytku', 'wyrób medyczny klasy I', 'środek ochrony indywidualnej, klasy III AQL 1.5'],
     vendors: ['MUMU', 'MUMU Plus', 'Sempercare', 'Ansell', 'Comfort Gloves'],
     pageID: "/produkty/rekawice-nitrylowe",
 
@@ -44,8 +45,8 @@ const products = [
     name: "Rękawice lateksowe pudrowane",
     category: "Rękawice ochronne",
     type: "lateksowe",
-    desc: "Lorem ipsum dolor sit amet.",
-    features: ['EN 455', 'EN 374'],
+    desc: "Oferowane rękawice lateksowe są zgodne z normami: EN 455-1, - 2, -3, -4 (Dyrektywa 93 / 42 / EEC dla wyrobów medycznych) EN 420, EN 374 - 1, -2, -3 (Dyrektywa 89 / 686 / EEC o środkach ochrony osobistej)",
+    features: ['produkt jednorazowego użytku', 'wyrób medyczny klasy I', 'środek ochrony indywidualnej, klasy III AQL 1.5'],
     vendors: ['MUMU', 'MUMU Plus', 'Sempercare', 'Ansell', 'Comfort Gloves'],
     pageID: "/produkty/rekawice-lateksowe-pudrowane",
 
@@ -55,8 +56,8 @@ const products = [
     name: "Rękawice lateksowe bezpudrowe",
     category: "Rękawice ochronne",
     type: "lateksowe",
-    desc: "Lorem ipsum dolor sit amet.",
-    features: ['EN 455', 'EN 374'],
+    desc: "Oferowane rękawice lateksowe są zgodne z normami: EN 455-1, - 2, -3, -4 (Dyrektywa 93 / 42 / EEC dla wyrobów medycznych) EN 420, EN 374 - 1, -2, -3 (Dyrektywa 89 / 686 / EEC o środkach ochrony osobistej)",
+    features: ['produkt jednorazowego użytku', 'wyrób medyczny klasy I', 'środek ochrony indywidualnej, klasy III AQL 1.5'],
     vendors: ['MUMU', 'MUMU Plus', 'Sempercare', 'Ansell', 'Comfort Gloves'],
     pageID: "/produkty/rekawice-lateksowe-bezpudrowe",
 
@@ -66,8 +67,8 @@ const products = [
     name: "Strzykawki trzyczęściowe",
     category: "Strzykawki",
     type: "",
-    desc: "Lorem ipsum dolor sit amet.",
-    features: ['93/42/EEC', 'CE 10422'],
+    desc: "",
+    features: ['strzykawki trzyczęściowe', 'luer slip', 'sterylne', '1xx X 27G X 1⁄2'],
     vendors: ['Cellotron'],
     pageID: "/produkty/strzykawki-trzyczesciowe",
 
@@ -77,8 +78,8 @@ const products = [
     name: "Fartuchy",
     category: "Odzież ochronna",
     type: "",
-    desc: "Lorem ipsum dolor sit amet.",
-    features: ['CE'],
+    desc: "",
+    features: ['fizelinowe', 'jednorazowe', '40g/m2'],
     vendors: ['Rue Cambon'],
     pageID: "/produkty/fartuchy",
 
@@ -88,19 +89,19 @@ const products = [
     name: "Maski FFP2",
     category: "Maski ochronne",
     type: "FFP2",
-    desc: "Lorem ipsum dolor sit amet.",
-    features: ['EN 455', 'EN 374'],
+    desc: "",
+    features: ['spełniające normy EN 149:2001+A1:2009', 'CE z nr jednostki notyfikowanej', 'maseczki z zaworami lub bez'],
     vendors: ['Aibana', 'Agrupacion Salud', 'Baltic', 'Filter Service', 'Zgoda'],
     pageID: "/produkty/maski-ffp2",
 
   }, {
-    image: Product5,
+    image: Product51,
     alt: "",
     name: "Maski FFP3",
     category: "Maski ochronne",
     type: "FFP3",
-    desc: "Lorem ipsum dolor sit amet.",
-    features: ['EN 455', 'EN 374'],
+    desc: "",
+    features: ['spełniające normy EN 149:2001+A1:2009', 'CE z nr jednostki notyfikowanej', 'maseczki z zaworami lub bez'],
     vendors: ['Aibana', 'Agrupacion Salud', 'Baltic', 'Filter Service', 'Zgoda'],
     pageID: "/produkty/maski-ffp3",
 
@@ -110,8 +111,8 @@ const products = [
     name: "Aerozol dezynfekcyjny",
     category: "Dezynfekcja",
     type: "",
-    desc: "Lorem ipsum dolor sit amet.",
-    features: ['Nie zawiera alkoholu'],
+    desc: "Aerozol Silver Flash dezynfekuje wszystkie urządzenia elektroniczne, terminale płatnicze, bankomaty, automaty, smartfony, tablety, klamki, poręcze, przyciski, przybory kuchenne, powierzchnie związane z procesem produkcji, przechowywaniem i spożywaniem żywności w tym wody pitnej.Silver Flash jest bezwonny, nie zostawia śladów, nie uszkadza powierzchni urządzeń elektronicznych.",
+    features: ['natychmiastowa aktywność wirusobójcza', 'potwierdzona skuteczność niszczenia SARS-CoV-2', 'nie zawiera alkoholu'],
     vendors: ['Silverflash'],
     pageID: "/produkty/aerozol-silverflash",
 

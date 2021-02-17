@@ -1,5 +1,6 @@
 import { Component } from 'react';
 import { products } from './cms-data/products-data';
+import { Link } from 'react-router-dom';
 
 
 
@@ -25,7 +26,7 @@ export class ProductPage extends Component {
 class BackButton extends Component {
   render() {
     return (
-      <a href="/produkty" className="button small-button back">powrót</a>
+      <Link to="/produkty" className="button small-button back">powrót</Link>
     )
   }
 }
@@ -38,12 +39,22 @@ class ProductInfo extends Component {
       <div className="product-info">
         <h2>{currentProduct.name}</h2>
         <span className="category">{currentProduct.category}</span>
-        <p>{currentProduct.desc}</p>
-
+        <Description />
+        <Features />
         <Vendors />
         <BackButton />
       </div>
     )
+  }
+}
+
+class Description extends Component {
+  render() {
+    if (currentProduct.desc !== "") {
+      return (<p>{currentProduct.desc}</p>)
+    } else {
+      return null
+    }
   }
 }
 
@@ -57,6 +68,18 @@ class Vendors extends Component {
           return <span key={`vendor-${index}`}>{element}</span>
         })}
       </div>
+    )
+  }
+}
+
+class Features extends Component {
+  render() {
+    return (
+      <ul className="features">
+        {(currentProduct.features).map((element, index) => {
+          return <li key={`feature-${index}`}>{element}</li>
+        })}
+      </ul>
     )
   }
 }

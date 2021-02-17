@@ -28,8 +28,8 @@ function _ScrollToTop(props) {
   return props.children
 }
 const ScrollToTop = withRouter(_ScrollToTop)
+function AppEng() {
 
-function App() {
   return (
     <div>
 
@@ -37,10 +37,10 @@ function App() {
         <ScrollToTop>
           <Header />
           <Switch>
-            <Route path="/" exact component={Home} />
-            <Route path="/produkty" exact component={Products} />
-            <Route path="/produkty" component={Product} />
-            <Route path="/zaufali-nam" exact component={Trusted} />
+            <Route path="/en" exact component={Home} />
+            <Route path="/products" exact component={Products} />
+            <Route path="/products" component={Product} />
+            <Route path="/testimonials" exact component={Trusted} />
             <Route path="/współpraca" exact component={Liaison} />
             <Route path="/do-pobrania" exact component={Downloads} />
             <Route path="/kontakt" exact component={Contact} />
@@ -52,4 +52,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppEng;
