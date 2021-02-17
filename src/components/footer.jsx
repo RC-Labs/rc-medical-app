@@ -38,8 +38,7 @@ let excludeAfterIndex = 5;
 
 const extraLinks = products.reduce((mappedArray, item, index) => {
   if (index < excludeAfterIndex) { // Whatever range condition you want
-    mappedArray.push(<a href={window.location.origin + item.pageID} key={index} > {item.name}</a >);
-    // console.log(window.location.origin + item.pageID)
+    mappedArray.push(<a href={window.location.href + item.pageID} key={index} > {item.name}</a >);
   }
 
   return mappedArray;
