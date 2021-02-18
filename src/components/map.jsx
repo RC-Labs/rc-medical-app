@@ -45,7 +45,7 @@ function Map() {
     <section className="map-section">
       <div className="map">
 
-        <ReactMapGL {...viewport} onViewportChange={setViewport}>
+        <ReactMapGL {...viewport}>
 
           <Source id="my-data" type="geojson" data={biuro}>
             <Layer {...layerStyle} />

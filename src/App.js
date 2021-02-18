@@ -33,7 +33,7 @@ function App() {
   return (
     <div>
 
-      <Router>
+      <Router basename="/" hashType="noslash">
         <ScrollToTop>
           <Header />
           <Switch>
