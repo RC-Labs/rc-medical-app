@@ -4,12 +4,12 @@ import { Newsletter } from "../components/newsletter";
 import { Partners } from "../components/partners";
 import { ContactSection } from "../components/contact-form";
 import { BusinessCards } from "../components/business-cards";
-import { Map } from "../components/map";
+import { MapSection } from "../components/map";
 
 function Contact() {
   return (
     <>
-      <Map />
+      <MapSection />
       <ContactSection />
       <BusinessCards />
       <Partners />
