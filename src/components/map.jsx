@@ -1,20 +1,6 @@
 import { useState } from 'react';
 import ReactMapGL, { Source, Layer } from 'react-map-gl';
 
-// export class Map extends Component {
-//   render() {
-//     return (
-//       <section id="address" class="map-section">
-//         <div class="map" id="map">
-//         </div>
-//         <div class="info">
-//         </div>
-//       </section>
-//     )
-//   }
-// }
-
-
 const biuro = {
   type: 'FeatureCollection',
   features: [
@@ -32,7 +18,7 @@ const layerStyle = {
 };
 
 function Map() {
-  const [viewport, setViewport] = useState({
+  const [viewport] = useState({
     width: "100%",
     height: "100%",
     latitude: 50.1020,
