@@ -1,10 +1,7 @@
 import { Component } from 'react';
 import { Input } from "./input";
-
-const liaisonText = {
-  heading: 'Skontaktuj się z naszym działem handlowym',
-  text: 'Zapraszamy do współpracy klientów indywidualnych oraz klientów biznesowych. Realizujemy zamówienia hurtowe oraz detaliczne. Oferujemy możliwość współpracy partnerskiej w Polsce i za granicą.',
-};
+import { liaisonText } from './cms-data/liaison-data';
+import { formData } from './cms-data/contact-data';
 
 
 class LiaisonText extends Component {
@@ -22,12 +19,12 @@ class LiaisonForm extends Component {
   render() {
     return (
       <form action="POST" className="liaison-form">
-        <Input type='text' for='name' placeholder='Imię i nazwisko' />
-        <Input type='text' for='email' placeholder='Adres e-mail' />
-        <Input type='text' for='phone-number' placeholder='Numer telefonu' />
-        <Input type='text' for='topic' placeholder='Temat' />
-        <Input for='message' width="30" height="10" />
-        <Input type='button' value='wyślij' />
+        <Input type='text' for='name' placeholder={formData.name} />
+        <Input type='text' for='email' placeholder={formData.mail} />
+        <Input type='text' for='phone-number' placeholder={formData.phone} />
+        <Input type='text' for='topic' placeholder={formData.subject} />
+        <Input for='message' width="30" height="10" placeholder={formData.message} />
+        <Input type='button' value={formData.button} />
       </form>
     )
   }

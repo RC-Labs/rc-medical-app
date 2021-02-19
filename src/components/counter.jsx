@@ -1,24 +1,6 @@
 import React, { Component } from 'react';
 import CountUp from 'react-countup';
-
-let counterData = [
-  {
-    number: 506,
-    text: 'Zadowolonych klientów'
-  }, {
-    number: 30,
-    text: 'obsługiwanych szpitali w Polsce'
-  }, {
-    number: 15,
-    text: 'zrealizowanych zamówień publicznych'
-  }, {
-    number: 8,
-    text: 'obsługiwanych krajów'
-  }, {
-    number: 150,
-    text: 'milionów sprzedanych rękawiczek'
-  }
-];
+import { counterData } from './cms-data/counter-data';
 
 const counters = counterData.map((element, index) =>
   <div className="counter-box" key={index}>

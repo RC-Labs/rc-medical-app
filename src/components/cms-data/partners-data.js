@@ -8,22 +8,22 @@ import logo6 from "../../assets/images/partners/szpital.png";
 const partnersLogos = [
   {
     logo: logo1,
-    alt: "komenda wojewódzka policji w Wrocławiu",
+    alt: "Komenda Wojewódzka Policji w Wrocławiu",
   }, {
     logo: logo2,
-    alt: "MGI medical",
+    alt: "MGI Medical",
   }, {
     logo: logo3,
-    alt: "my medikal",
+    alt: "My Medikal",
   }, {
     logo: logo4,
-    alt: "poczta polska",
+    alt: "Poczta Polska",
   }, {
     logo: logo5,
-    alt: "komenda główna policji w Krakowie",
+    alt: "Komenda Główna Policji w Krakowie",
   }, {
     logo: logo6,
-    alt: "szpital pediatryczny w Bielsku Białej",
+    alt: "Szpital Pediatryczny w Bielsku Białej",
   },
 ];
 

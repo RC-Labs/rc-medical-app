@@ -8,7 +8,7 @@ import 'swiper/swiper-bundle.css';
 SwiperCore.use(Autoplay);
 
 const logos = partnersLogos.map((element, index) =>
-  <SwiperSlide key={`logo-${index}`} className='partner-logo'>
+  <SwiperSlide key={`logo-${index}`} className='partner-logo' title={element.alt}>
     <img src={element.logo} alt={element.alt} />
   </SwiperSlide>
 )

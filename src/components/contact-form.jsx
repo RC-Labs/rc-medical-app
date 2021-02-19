@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import { Input } from './input';
 import { address } from './cms-data/footer-data';
+import { formData } from './cms-data/contact-data';
 
 const addressBoxes = address.map((element, index) =>
   <div key={`contact-${index}`} className="contact-section">
@@ -39,10 +40,10 @@ class ContactForm extends Component {
   render() {
     return (
       <form action="POST" className="liaison-form">
-        <Input type='text' for='name' placeholder='Imię i nazwisko' />
-        <Input type='text' for='email' placeholder='Adres e-mail' />
-        <Input for='message' width="30" height="10" />
-        <Input type='button' value='wyślij' />
+        <Input type='text' for='name' placeholder={formData.name} />
+        <Input type='text' for='email' placeholder={formData.mail} />
+        <Input for='message' width="30" height="10" placeholder={formData.message} />
+        <Input type='button' value={formData.button} />
       </form>
     )
   }

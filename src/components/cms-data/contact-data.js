@@ -27,4 +27,13 @@ const contacts = [
   },
 ]
 
-export { contacts };
+const formData = {
+  name: 'imię i nazwisko',
+  mail: 'adres e-mail',
+  phone: 'numer telefonu',
+  subject: 'temat',
+  message: 'wiadomość',
+  button: 'wyślij',
+}
+
+export { contacts, formData };
