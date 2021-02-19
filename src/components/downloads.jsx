@@ -6,7 +6,7 @@ export class Downloads extends Component {
     return (
       <section className='downloads'>
         <div className="container">
-          <h2 data-aos='fade-right'>Do pobrania</h2>
+          <h2>Do pobrania</h2>
           {downloadsList}
         </div>
       </section>

@@ -7,12 +7,11 @@ import { Component } from 'react';
 import { Map, Marker, Overlay } from 'pigeon-maps'
 
 const map = (
-  <Map defaultCenter={[50.0887, 19.9127]} defaultZoom={12}  >
-    <Marker anchor={[50.0887, 19.9127]} payload={1} onClick={({ event, anchor, payload }) => { }} />
+  <Map defaultCenter={[50.0887, 19.9127]} defaultZoom={12} boxClassname='tiles' >
+    <Marker anchor={[50.0887, 19.9127]} payload={2} onClick={({ event, anchor, payload }) => { }} />
     <Marker anchor={[50.1163, 19.8376]} payload={1} onClick={({ event, anchor, payload }) => { }} />
 
     <Overlay anchor={[50.879, 4.6997]} offset={[120, 79]}>
-      {<img src='pigeon.jpg' width={240} height={158} alt='' />}
       {MapMarker}
     </Overlay>
   </Map>

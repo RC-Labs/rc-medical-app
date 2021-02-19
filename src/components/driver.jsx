@@ -57,9 +57,10 @@ class SliderButton extends Component {
   }
 };
 
+
 const slides = driverImages.map((element, index) =>
   <SwiperSlide key={`slide-${index}`} className='driver-image'>
-    <div className="container">
+    <div className="container" data-aos='flip-up' data-aos-duration='600'>
       <div className="driver-text">
         <h1>{element.heading}</h1>
         <p>{element.text}</p>

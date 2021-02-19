@@ -13,7 +13,7 @@ const downloadsData = [
   }, {
     file: catalogue2021eng,
     image: catalogueImageEng,
-    title: "Katalog 2021 - po angielsku",
+    title: "2021 Catalogue",
     link: 'katalog-2021-eng.pdf',
   },
 ];

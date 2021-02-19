@@ -36,7 +36,7 @@ export class ProductsSection extends Component {
 class Categories extends Component {
   render() {
     return (
-      <div className="categories">
+      <div className="categories" data-aos='fade-right'>
         <div className="cat-sticky">
           <span className="cat-heading">Kategorie</span>
           <CategoryList click={this.props.handler} />

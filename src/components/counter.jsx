@@ -33,7 +33,7 @@ const counters = counterData.map((element, index) =>
 export class Counter extends Component {
   render() {
     return (
-      <section className="counter">
+      <section className="counter" data-aos='fade-down'>
         <div className="container">
           {counters}
         </div>

@@ -4,6 +4,23 @@
   position: relative;
   box-shadow: 0 0 5px #00000040;
 
+  .tiles {
+    filter: sepia(1) brightness(1) hue-rotate(180deg) invert(0.1);
+
+  }
+
+  .pigeon-click-block {
+    background-image: $marker !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    width: 40px;
+    height: 40px;
+
+    svg {
+      display: none;
+    }
+  }
 
 
   .marker {

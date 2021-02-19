@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import { iconBoxesData } from './cms-data/icon-boxes-data';
 
-
 class IconBox extends Component {
   render() {
     return (
-      <div className="icon-box" data-aos="fade-up">
+      <div className="icon-box" data-aos={this.props.aosAnimation} data-aos-delay={this.props.aosDelay}>
         <div className="icon" >
           <img src={this.props.src} alt={this.props.alt} />
         </div>
@@ -14,10 +13,9 @@ class IconBox extends Component {
     )
   }
 }
-let aosDelay = 0;
-
+let aosDelayValue = 0;
 const iconBoxList = iconBoxesData.map((element, index) =>
-  < IconBox data-aos-delay={aosDelay} key={index} src={element.icon} alt={element.imageAlt} title={element.title} lead={element.lead} />
+  < IconBox aosAnimation='fade-up' aosDelay={aosDelayValue += 200} key={index} src={element.icon} alt={element.imageAlt} title={element.title} lead={element.lead} />
 )
 
 export class IconBoxes extends Component {
