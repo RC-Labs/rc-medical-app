@@ -10,12 +10,16 @@ const downloadsData = [
     image: catalogueImage,
     title: "Katalog 2021",
     link: 'katalog-2021.pdf',
+    button: 'pobierz',
   }, {
     file: catalogue2021eng,
     image: catalogueImageEng,
     title: "2021 Catalogue",
     link: 'katalog-2021-eng.pdf',
+    button: 'pobierz',
   },
 ];
 
-export { downloadsData };
+const downloadsHeading = 'Do Pobrania'
+
+export { downloadsData, downloadsHeading };

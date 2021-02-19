@@ -1,7 +1,7 @@
 import { Component } from 'react';
 import { Input } from './input';
 import { address } from './cms-data/footer-data';
-import { formData } from './cms-data/contact-data';
+import { formData, contactHeading, legalInfo } from './cms-data/contact-data';
 
 const addressBoxes = address.map((element, index) =>
   <div key={`contact-${index}`} className="contact-section">
@@ -21,13 +21,13 @@ class ContactInfo extends Component {
         <div className="contact-section">
           <h3>RC Medical</h3>
           <div className="adress">
-            <span className="contact-info">ul. Mehoffera 10</span>
-            <span className="contact-info">31-322 Kraków</span>
+            <span className="contact-info">{legalInfo.street}</span>
+            <span className="contact-info">{legalInfo.postal}</span>
           </div>
           <div className="numbers">
-            <span className="contact-info">NIP: 123 456 78 90</span>
-            <span className="contact-info">KRS 1234567890</span>
-            <span className="contact-info">REGON 123456789</span>
+            <span className="contact-info">{legalInfo.NIP}</span>
+            <span className="contact-info">{legalInfo.KRS}</span>
+            <span className="contact-info">{legalInfo.REGON}</span>
           </div>
         </div>
         {addressBoxes}
@@ -55,7 +55,7 @@ export class ContactSection extends Component {
     return (
       <section className="contact">
         <div className="container">
-          <h2>Kontakt</h2>
+          <h2>{contactHeading}</h2>
           <ContactInfo />
           <ContactForm />
         </div>

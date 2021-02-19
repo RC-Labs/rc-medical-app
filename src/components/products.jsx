@@ -1,6 +1,6 @@
 
 import { Component } from 'react';
-import { products, categories } from './cms-data/products-data';
+import { products, categories, catHeading } from './cms-data/products-data';
 
 
 export class ProductsSection extends Component {
@@ -38,7 +38,7 @@ class Categories extends Component {
     return (
       <div className="categories" data-aos='fade-right'>
         <div className="cat-sticky">
-          <span className="cat-heading">Kategorie</span>
+          <span className="cat-heading">{catHeading}</span>
           <CategoryList click={this.props.handler} />
         </div>
       </div>

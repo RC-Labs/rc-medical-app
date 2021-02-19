@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { ContactBoxes } from "./contact-boxes";
 import { menuLinks } from "./header";
 import { address } from "../components/cms-data/footer-data";
-import { products } from "./cms-data/products-data";
+import { products, productsHeading } from "./cms-data/products-data";
 
 class Copyright extends Component {
   render() {
@@ -60,7 +60,7 @@ class FooterExtraLinks extends Component {
   render() {
     return (
       <ul className="links-box">
-        <h3>Produkty</h3>
+        <h3>{productsHeading}</h3>
         {extraLinks}
       </ul>
     )

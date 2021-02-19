@@ -119,5 +119,8 @@ const products = [
   },
 ];
 
+const productsHeading = 'produkty';
+const catHeading = 'produkty';
 
-export { products, categories };
+
+export { products, categories, productsHeading, catHeading };
