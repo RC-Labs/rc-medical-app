@@ -22,5 +22,9 @@ const menu = [
 
 ];
 
+const lang = {
+  name: 'en',
+  link: '/'
+}
 
-export { menu };
+export { menu, lang };

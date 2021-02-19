@@ -36,6 +36,27 @@ header {
     }
   }
 
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .lang-button {
+      width: 40px;
+      height: 40px;
+      padding: 0;
+      margin-left: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media (max-width: 768px) {
+        position: relative;
+        right: 60px;
+      }
+    }
+  }
+
   .mobile-menu {
     display: flex;
     background: $color-gradient;

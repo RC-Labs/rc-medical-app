@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import { menu } from "./cms-data/menu-data";
+import { menu, lang } from "./cms-data/menu-data";
 
 export class Header extends Component {
   render() {
@@ -11,9 +11,18 @@ export class Header extends Component {
           <nav>
             <Menu />
             <MobileMenu />
+            <Language />
           </nav>
         </div>
       </header>
+    )
+  }
+}
+
+class Language extends Component {
+  render() {
+    return (
+      <a href={lang.link} title={lang.link} className='button lang-button small-button'>{lang.name}</a>
     )
   }
 }
