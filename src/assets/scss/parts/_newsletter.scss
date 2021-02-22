@@ -73,12 +73,12 @@
       padding: 20px;
       box-shadow: 0 0 5px #00000080;
       font-family: 'Raleway', sans-serif;
-      color: $med-gray;
+      color: $dark-gray;
 
 
       &::placeholder {
         font-family: 'Raleway', sans-serif;
-        color: $light-gray;
+        color: $med-gray;
       }
     }
 
