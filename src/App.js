@@ -5,7 +5,6 @@ import 'aos/dist/aos.css';
 
 import React, { useEffect } from 'react';
 
-
 import { Header } from './components/header';
 import Home from "./routes/Home";
 import Trusted from "./routes/Trusted";
@@ -18,6 +17,17 @@ import PrivacyPolicy from './routes/PrivacyPolicy';
 import { Footer } from "./components/footer";
 
 import { BrowserRouter as Router, Switch, Route, useLocation, withRouter } from 'react-router-dom';
+
+import TagManager from 'react-gtm-module'
+const tagManagerArgs = {
+  gtmId: 'GTM-WFBLRDM',
+  dataLayerName: 'PageDataLayer',
+  events: {
+    sendUserInfo: 'userInfo'
+  }
+}
+
+TagManager.initialize(tagManagerArgs)
 
 AOS.init();
 
