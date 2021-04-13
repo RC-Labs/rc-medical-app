@@ -51,7 +51,12 @@ class ProductInfo extends Component {
 class Description extends Component {
   render() {
     if (currentProduct.desc !== "") {
-      return (<p>{currentProduct.desc}</p>)
+      return (
+        (currentProduct).desc.map((element, index) => {
+          return <p key={`desc-${index}`}>{element}</p>
+        })
+
+      )
     } else {
       return null
     }
