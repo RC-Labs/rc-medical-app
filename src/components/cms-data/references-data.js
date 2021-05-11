@@ -22,6 +22,15 @@ const references = [
   }, {
     quote: "Dostawy wykonane należycie i w ustalonym terminie.",
     company: "Komenda Wojewódzka Policji w Krakowie",
+  }, {
+    quote: "Polecamy firmę Rue Cambon sp. z o.o jako rzetelnego dostawcę i godnego zaufania partnera biznesowego",
+    company: "Dom Pomocy Społecznej Nazaret w Gliwicach",
+  }, {
+    quote: 'Wyrażamy zadowolenie ze współpracy i polecamy firmę Rue Cambon sp. z o.o',
+    company: 'GammaMedica Kraków',
+  }, {
+    quote: 'Współpraca z RC Medical była dla nas przyjemnością. Jesteśmy wdzięczni za otwartoś i empatię, której doświadczyliśmy ze strony pracowników firmy',
+    company: 'NZOZ Zgromadzenia Księży Marianów'
   }
 ];
 
