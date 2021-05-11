@@ -7,14 +7,14 @@ import declaration2 from '../../assets/files/declaration-mymedikal.pdf';
 
 let specialLinksData = [
   {
-    paragraph: 'Od 2020 jesteśmy wyłącznym dystrybutorem marki MGI Medical',
+    paragraph: 'Od 2020 jesteśmy upoważnieni do sprzedaży i autoryzowanym dystrybutorem produktów marki MGI Medical',
     logo: logo1,
     logoAlt: 'MGI Medical',
     file: declaration1,
     button: 'Zobacz',
   },
   {
-    paragraph: 'Od 2021 roku jesteśmy wyłącznym dystrybutorem marki MyMedical',
+    paragraph: 'Od 2020 roku jesteśmy wyłącznym i autoryzowanym dystrybutorem produktów marki MyMedical',
     logo: logo2,
     logoAlt: 'My Medikal',
     file: declaration2,
