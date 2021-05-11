@@ -14,7 +14,7 @@ class SpecialLink extends Component {
 
           <p>{this.props.paragraph}</p>
 
-          <a className='special-link-download small-button' href={this.props.path}>List przedstawicielski</a>
+          <a className='special-link-download small-button' target='_blank' rel="noreferrer" href={this.props.path}>{this.props.button}</a>
         </div>
       </div>
     )
@@ -23,7 +23,7 @@ class SpecialLink extends Component {
 
 
 const specialLinksSet = specialLinksData.map((element, index) =>
-  < SpecialLink key={index} paragraph={element.paragraph} img={element.logo} alt={element.alt} path={element.path} />
+  < SpecialLink key={index} paragraph={element.paragraph} img={element.logo} alt={element.alt} path={element.file} button={element.button} />
 )
 
 export class SpecialLinks extends Component {

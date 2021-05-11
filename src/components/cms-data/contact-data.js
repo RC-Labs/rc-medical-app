@@ -1,7 +1,7 @@
 const contacts = [
   {
     name: "Grzegorz Guzik",
-    position: "spec. ds. zamówień publicznych",
+    position: "spec. ds. zamówień publicznych / starszy handlowiec",
     phone: "+48 724 451 234",
     mail: "grzegorz@rcmedical.pl",
   }, {
