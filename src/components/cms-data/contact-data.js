@@ -10,6 +10,11 @@ const contacts = [
     phone: "+48 609 139 705",
     mail: "anna@rcmedical.pl",
   }, {
+    name: "Cyprian Ptaszek",
+    position: "handlowiec",
+    phone: "+48 665 871 234",
+    mail: "cyprian.ptaszek@rcmedical.pl",
+  }, {
     name: "Marcin Bendkowski",
     position: "specjalista ds. logistyki",
     phone: "+48 691 017 834",
@@ -24,11 +29,6 @@ const contacts = [
     position: "dział ksiegowości",
     phone: "+48 691 599 477",
     mail: "ksiegowosc@rcmedical.pl",
-  }, {
-  name: "Cyprian Ptaszek",
-  position: "handlowiec",
-  phone: "+48 665 871 234",
-  mail: "cyprian.ptaszek@rcmedical.pl",
   }
 ]
 
