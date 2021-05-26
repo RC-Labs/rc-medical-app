@@ -22,7 +22,7 @@ let specialLinksData = [
     button: 'Zobacz',
   },
   {
-    paragraph: 'Zostaliśmy wyłącznym dostawcą produktów ochrony osobistej do Parlamentu Europejskiego.',
+    paragraph: 'Zostaliśmy dostawcą produktów ochrony osobistej do Parlamentu Europejskiego.',
     logo: logo3,
     logoAlt: 'Parlament Europejski',
     file: null,
