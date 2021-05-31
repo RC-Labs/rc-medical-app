@@ -16,7 +16,7 @@ const contacts = [
     mail: "cyprian.ptaszek@rcmedical.pl",
   }, {
     name: "Marcin Bendkowski",
-    position: "specjalista ds. logistyki",
+    position: "marketing i logistyka",
     phone: "+48 691 017 834",
     mail: "marcin@rcmedical.pl",
   }, {
