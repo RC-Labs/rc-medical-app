@@ -13,7 +13,7 @@ const contactBoxesData = [
     icon: phoneIcon,
     alt: "phone",
     title: "Zadzwoń do nas",
-    tel: "+48 792 893 397",
+    tel: "+48 609 139 705",
   }, {
     icon: hoursIcon,
     alt: "watch",
