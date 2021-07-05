@@ -33,7 +33,7 @@ const contacts = [
     name: "Natasza Zielińska",
     position: "autoryzowany przedstawiciel",
     phone: "+49 1520 768 2503",
-    mail: "info@sanmedi.de",
+    mail: "info@sanemedi.de",
   }
 ]
 
