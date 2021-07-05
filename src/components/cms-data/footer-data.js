@@ -32,7 +32,7 @@ const address = [
     title: 'Magazyn',
     street: "ul. Komandosów 1/2",
     postal: "32-085 Modlniczka",
-  },
+  }
 ]
 
 
