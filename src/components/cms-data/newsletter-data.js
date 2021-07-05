@@ -6,6 +6,11 @@ const newsletterData = {
   PPLink: '/polityka-prywatnosci',
   inputPlaceholder: 'Podaj nam swój adres e-mail',
   buttonValue: 'zapisz się',
+  sending: 'wysyłam...',
+  success: 'Dziękujemy za subskrypcję!',
+  error: 'Niespodziewany problem',
+  empty: 'Podaj poprawny adres mailowy',
+  duplicate: 'Zbyt dużo prób subskrypcji na ten adres mailowy'
 };
 
 export { newsletterData };

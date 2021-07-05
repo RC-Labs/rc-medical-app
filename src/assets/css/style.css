@@ -684,10 +684,17 @@ header .menu a:hover:after {
   background: white;
   width: 100%;
   padding: 20px;
+  padding-right: 200px;
   -webkit-box-shadow: 0 0 5px #00000080;
           box-shadow: 0 0 5px #00000080;
   font-family: 'Raleway', sans-serif;
   color: #33323A;
+}
+
+@media (max-width: 580px) {
+  .newsletter form input[type=email] {
+    padding-right: 20px;
+  }
 }
 
 .newsletter form input[type=email]::-webkit-input-placeholder {
@@ -710,14 +717,14 @@ header .menu a:hover:after {
   color: #707B98;
 }
 
-.newsletter form input[type=button] {
+.newsletter form button[type=submit] {
   position: absolute;
   top: 0;
   right: 0;
 }
 
 @media (max-width: 580px) {
-  .newsletter form input[type=button] {
+  .newsletter form button[type=submit] {
     width: 100%;
     position: unset;
   }
@@ -736,6 +743,14 @@ header .menu a:hover:after {
 .newsletter form .accept label a {
   color: white;
   text-decoration: underline;
+}
+
+.newsletter form .msg-alert p {
+  text-align: center;
+  display: block;
+  background: #ffffff80;
+  margin-top: 20px;
+  padding: 20px;
 }
 
 .partners h3 {
