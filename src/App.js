@@ -53,7 +53,6 @@ function App() {
             <Route path="/współpraca" exact component={Liaison} />
             <Route path="/do-pobrania" exact component={Downloads} />
             <Route path="/kontakt" exact component={Contact} />
-            <Route path="/cms" exact component={ContentManagementSystem} />
           </Switch>
         </ScrollToTop>
       </Router>
