@@ -14,7 +14,6 @@ import Products from "./routes/Products";
 import Product from "./routes/Product";
 import Downloads from "./routes/Downloads";
 import PrivacyPolicy from './routes/PrivacyPolicy';
-import { Footer } from "./components/footer";
 
 import { BrowserRouter as Router, Switch, Route, useLocation, withRouter } from 'react-router-dom';
 
@@ -45,7 +44,6 @@ function App() {
 
       <Router basename="/" hashType="noslash">
         <ScrollToTop>
-          <Header />
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/polityka-prywatnosci" exact component={PrivacyPolicy} />
@@ -55,8 +53,8 @@ function App() {
             <Route path="/współpraca" exact component={Liaison} />
             <Route path="/do-pobrania" exact component={Downloads} />
             <Route path="/kontakt" exact component={Contact} />
+            <Route path="/cms" exact component={ContentManagementSystem} />
           </Switch>
-          <Footer />
         </ScrollToTop>
       </Router>
     </div >

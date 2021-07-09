@@ -5,10 +5,13 @@ import { IconBoxes } from "../components/icon-boxes";
 import { Newsletter } from "../components/newsletter";
 import { Partners } from "../components/partners";
 import { SpecialLinks } from "../components/special-links";
+import { Header } from "../components/header";
+import { Footer } from "../components/footer";
 
 function Home() {
   return (
     <>
+      <Header />
       <Driver />
       <Counter />
       <About />
@@ -16,6 +19,7 @@ function Home() {
       <IconBoxes />
       <Newsletter />
       <Partners />
+      <Footer />
     </>
   );
 }
