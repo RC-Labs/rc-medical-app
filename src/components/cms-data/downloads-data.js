@@ -1,8 +1,10 @@
 
 import catalogue2021 from "../../assets/files/katalog-2021.pdf";
-import catalogue2021eng from "../../assets/files/katalog-2021-eng.pdf";
 import catalogueImage from "../../assets/images/katalog-pl.png";
+import catalogue2021eng from "../../assets/files/katalog-2021-eng.pdf";
 import catalogueImageEng from "../../assets/images/katalog-eng.png";
+import instrukcjaMumu from "../../assets/files/instrukcja-mumu-premium.pdf";
+import instrukcjaMumuImage from "../../assets/images/instrukcja-mumu-premium.png";
 
 const downloadsData = [
   {
@@ -16,6 +18,12 @@ const downloadsData = [
     image: catalogueImageEng,
     title: "2021 Catalogue",
     link: catalogue2021eng,
+    button: 'pobierz',
+  }, {
+    file: instrukcjaMumu,
+    image: instrukcjaMumuImage,
+    title: "Instrukcja obsługi rękawic Mumu Premium",
+    link: instrukcjaMumu,
     button: 'pobierz',
   },
 ];
