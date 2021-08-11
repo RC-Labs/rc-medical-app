@@ -26,7 +26,7 @@ export class ProductPage extends Component {
 class BackButton extends Component {
   render() {
     return (
-      <Link to="/produkty" className="button small-button back">powrót</Link>
+      <Link to="/produkty/wszystkie" className="button small-button back">powrót</Link>
     )
   }
 }
@@ -69,7 +69,7 @@ class Vendors extends Component {
       <div className="vendors">
         <h3>Producenci:</h3>
 
-        { (currentProduct.vendors).map((element, index) => {
+        {(currentProduct.vendors).map((element, index) => {
           return <span key={`vendor-${index}`}>{element}</span>
         })}
       </div>

@@ -9,22 +9,22 @@ import Product6 from "../../assets/images/products/product-6.png"
 const categories = [
   {
     name: 'Wszystkie produkty',
-    pageID: '/produkty/',
+    pageID: '/produkty/wszystkie',
   }, {
     name: 'Rękawice ochronne',
-    pageID: '/produkty/cat1',
+    pageID: '/produkty/rekawice-ochronne',
   }, {
     name: 'Strzykawki',
-    pageID: '/produkty/cat2',
+    pageID: '/produkty/strzykawki',
   }, {
     name: 'Odzież ochronna',
-    pageID: '/produkty/cat3',
+    pageID: '/produkty/odziez-ochronna',
   }, {
     name: 'Maski ochronne',
-    pageID: '/produkty/cat4',
+    pageID: '/produkty/maski-ochronne',
   }, {
     name: 'Dezynfekcja',
-    pageID: '/produkty/cat5',
+    pageID: '/produkty/dezynfekcja',
   }
 ]
 const products = [

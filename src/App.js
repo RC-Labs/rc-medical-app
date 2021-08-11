@@ -49,7 +49,12 @@ function App() {
           <Switch>
             <Route path="/" exact component={Home} />
             <Route path="/polityka-prywatnosci" exact component={PrivacyPolicy} />
-            <Route path="/produkty" exact component={Products} />
+            <Route path="/produkty/wszystkie" exact component={Products} />
+            <Route path="/produkty/rekawice-ochronne" exact component={Products} />
+            <Route path="/produkty/strzykawki" exact component={Products} />
+            <Route path="/produkty/odziez-ochronna" exact component={Products} />
+            <Route path="/produkty/maski-ochronne" exact component={Products} />
+            <Route path="/produkty/dezynfekcja" exact component={Products} />
             <Route path="/produkty/" component={Product} />
             <Route path="/zaufali-nam" exact component={Trusted} />
             <Route path="/współpraca" exact component={Liaison} />

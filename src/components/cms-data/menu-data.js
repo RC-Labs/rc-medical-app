@@ -1,7 +1,7 @@
 const menu = [
   {
     name: "Produkty",
-    link: "/produkty",
+    link: "/produkty/wszystkie",
   },
   {
     name: "Zaufali nam",

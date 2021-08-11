@@ -1,23 +1,23 @@
 
 import { Component } from 'react';
 import { products, categories, catHeading } from './cms-data/products-data';
-
+import { Link } from 'react-router-dom';
 
 export class ProductsSection extends Component {
   constructor(props) {
     super(props);
     this.handler = this.handler.bind(this)
     this.state = {
-      cat: 'Wszystkie produkty'
+      cat: 'Wszystkie produkty',
+      currentCat: localStorage.currentCat
     };
   }
   handler(event) {
     this.setState({
       cat: event.target.innerHTML
     }, () => {
-      localStorage.setItem("currentCat", this.state);
+      localStorage.setItem("currentCat", this.state.cat);
     })
-
   }
 
   render() {
@@ -51,7 +51,7 @@ class CategoryList extends Component {
   render() {
     return (
       categories.map((element, index) =>
-        <span onClick={this.props.click} key={`cat-${index}`} className="cat">{element.name}</span>
+        <Link to={element.pageID} onClick={this.props.click} key={`cat-${index}`} className="cat">{element.name}</Link>
       )
     )
   }
@@ -79,8 +79,8 @@ class ProductsList extends Component {
     return (
       <div className="product-list">
         <h2>{this.props.passCat}</h2>
-        {  products.filter(product => product.category === this.props.passCat || this.props.passCat === "Wszystkie produkty").map((filteredProduct, index) => (
-          <ListedProduct link={window.location.origin + filteredProduct.pageID} key={index} src={filteredProduct.image} alt={filteredProduct.alt} name={filteredProduct.name} detail={filteredProduct.category} />
+        {products.filter(product => product.category === this.props.passCat || this.props.passCat === "Wszystkie produkty").map((filteredProduct, index) => (
+          <ListedProduct link={filteredProduct.pageID} key={index} src={filteredProduct.image} alt={filteredProduct.alt} name={filteredProduct.name} detail={filteredProduct.category} />
         ))}
       </div>
     )
